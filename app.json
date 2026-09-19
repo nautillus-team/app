@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Nautillus",
+    "slug": "nautillus",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFFFFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bentotec.nautillus",
+      "infoPlist": {
+        "NSCameraUsageDescription": "O Nautillus usa a câmera para escanear o QR Code dos lotes de medicamentos.",
+        "NSLocationWhenInUseUsageDescription": "O Nautillus usa a localização para registrar a precisão do GPS na auditoria de visita."
+      }
+    },
+    "android": {
+      "package": "com.bentotec.nautillus",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "O Nautillus usa a câmera para escanear o QR Code dos lotes de medicamentos."
+        }
+      ],
+      "expo-image"
+    ]
+  }
+}
